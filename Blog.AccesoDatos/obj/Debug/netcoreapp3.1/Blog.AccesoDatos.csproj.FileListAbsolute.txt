@@ -12,3 +12,17 @@ A:\ASP.NETCore_Proyects\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDato
 A:\ASP.NETCore_Proyects\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.csproj.CopyComplete
 A:\ASP.NETCore_Proyects\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.dll
 A:\ASP.NETCore_Proyects\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.AccesoDatos.deps.json
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.AccesoDatos.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.AccesoDatos.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.Models.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.Utilidades.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.Models.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\bin\Debug\netcoreapp3.1\Blog.Utilidades.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.AssemblyInfoInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.AssemblyInfo.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.csproj.CopyComplete
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.AccesoDatos\obj\Debug\netcoreapp3.1\Blog.AccesoDatos.pdb

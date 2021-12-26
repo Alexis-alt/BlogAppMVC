@@ -7,3 +7,12 @@ A:\ASP.NETCore_Proyects\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.
 A:\ASP.NETCore_Proyects\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.csproj.CoreCompileInputs.cache
 A:\ASP.NETCore_Proyects\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.dll
 A:\ASP.NETCore_Proyects\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\bin\Debug\netcoreapp3.1\Blog.Utilidades.deps.json
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\bin\Debug\netcoreapp3.1\Blog.Utilidades.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\bin\Debug\netcoreapp3.1\Blog.Utilidades.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.csproj.AssemblyReference.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.AssemblyInfoInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.AssemblyInfo.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.pdb
