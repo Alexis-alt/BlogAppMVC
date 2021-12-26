@@ -1,0 +1,9 @@
+A:\ASP.NETCore_Proyects\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.deps.json
+A:\ASP.NETCore_Proyects\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.dll
+A:\ASP.NETCore_Proyects\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.pdb
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.csproj.AssemblyReference.cache
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.AssemblyInfoInputs.cache
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.AssemblyInfo.cs
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.csproj.CoreCompileInputs.cache
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.dll
+A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.pdb
