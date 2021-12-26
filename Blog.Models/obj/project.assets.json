@@ -7744,11 +7744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj",
+      "projectUniqueName": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj",
       "projectName": "Blog.Models",
-      "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj",
+      "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj",
       "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-      "outputPath": "A:\\ASP.NETCore_Proyects\\Blog.Models\\obj\\",
+      "outputPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",

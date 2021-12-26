@@ -10361,11 +10361,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\ASP.NETCore_Proyects\\Blog\\Blog.csproj",
+      "projectUniqueName": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog\\Blog.csproj",
       "projectName": "Blog",
-      "projectPath": "A:\\ASP.NETCore_Proyects\\Blog\\Blog.csproj",
+      "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog\\Blog.csproj",
       "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-      "outputPath": "A:\\ASP.NETCore_Proyects\\Blog\\obj\\",
+      "outputPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -10392,8 +10392,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {
-              "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj"
+            "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {
+              "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {}
+    "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {}
   },
   "projects": {
-    "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {
+    "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj",
         "projectName": "Blog.AccesoDatos",
-        "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj",
+        "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\Blog.AccesoDatos.csproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "A:\\ASP.NETCore_Proyects\\Blog.AccesoDatos\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.AccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -38,11 +38,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj": {
-                "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj"
+              "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj": {
+                "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj"
               },
-              "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\Blog.Utilidades.csproj": {
-                "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\Blog.Utilidades.csproj"
+              "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\Blog.Utilidades.csproj": {
+                "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\Blog.Utilidades.csproj"
               }
             }
           }
@@ -97,14 +97,14 @@
         }
       }
     },
-    "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj": {
+    "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj",
+        "projectUniqueName": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj",
         "projectName": "Blog.Models",
-        "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.Models\\Blog.Models.csproj",
+        "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\Blog.Models.csproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "A:\\ASP.NETCore_Proyects\\Blog.Models\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
@@ -171,14 +171,14 @@
         }
       }
     },
-    "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\Blog.Utilidades.csproj": {
+    "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\Blog.Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\Blog.Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\Blog.Utilidades.csproj",
         "projectName": "Blog.Utilidades",
-        "projectPath": "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\Blog.Utilidades.csproj",
+        "projectPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\Blog.Utilidades.csproj",
         "packagesPath": "C:\\Users\\alexi\\.nuget\\packages\\",
-        "outputPath": "A:\\ASP.NETCore_Proyects\\Blog.Utilidades\\obj\\",
+        "outputPath": "C:\\Users\\alexi\\Documents\\GitHub\\BlogAppMVC\\Blog.Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.1\\Components\\Offline Packages",
