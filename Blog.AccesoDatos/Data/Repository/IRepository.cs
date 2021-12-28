@@ -20,6 +20,15 @@ namespace Blog.AccesoDatos.Data.Repository
 
 
         //Obtener todos con o sin parametros de busqueda 
+        //Parametros: delegado que recibe un Gnerico y regresa un boolean; Por defecto estan en null
+        //Delegado que recibe un conjunto de elementos de tipo generico y los devuelve ordenados = Por defecto nulll
+        //String para incluir propiedades, por defecto null
+
+
+        //El IQueryable permite realizar consultas de filtrado que ejecutan en BD como un SPR 
+        //Permite performace debido a que las consultas se ejecutan en el servidor hasta colocar un toList o un Foreach
+
+
         IEnumerable<T> GetAll(
            Expression<Func<T, bool>> filter = null,
            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
