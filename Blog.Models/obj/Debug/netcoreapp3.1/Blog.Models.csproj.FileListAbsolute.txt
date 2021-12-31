@@ -7,3 +7,12 @@ A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.Assembly
 A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.csproj.CoreCompileInputs.cache
 A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.dll
 A:\ASP.NETCore_Proyects\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.deps.json
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\bin\Debug\netcoreapp3.1\Blog.Models.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.csproj.AssemblyReference.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.AssemblyInfoInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.AssemblyInfo.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.csproj.CoreCompileInputs.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.dll
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Models\obj\Debug\netcoreapp3.1\Blog.Models.pdb

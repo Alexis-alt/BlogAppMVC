@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Blog.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,12 @@ namespace Blog.AccesoDatos.Data
             : base(options)
         {
         }
+
+        //Tablas de la BD
+
+       public DbSet<Categoria> Categoria { get; set; }
+
+
+
     }
 }

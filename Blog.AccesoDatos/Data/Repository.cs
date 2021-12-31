@@ -47,11 +47,34 @@ namespace Blog.AccesoDatos.Data
         public T FirstOrDefaul(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
 
-            throw new NotImplementedException();
+            IQueryable<T> query = dbSet;
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+
+            }
+
+            if (includeProperties != null)
+            {
+
+                foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+
+                    query = query.Include(includeProperty);
+
+                }
+
+            }
+
+
+            return query.FirstOrDefault();
+
+
 
         }
 
-      
+
         public IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = null)
         {
 
@@ -94,28 +117,17 @@ namespace Blog.AccesoDatos.Data
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            var entityToRemove = dbSet.Find(id);
+
+            Remove(entityToRemove);
+            
         }
 
         public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            dbSet.Remove(entity);
         }
     }
 }
