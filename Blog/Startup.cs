@@ -1,5 +1,6 @@
 
 using Blog.AccesoDatos.Data;
+using Blog.AccesoDatos.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +34,12 @@ namespace Blog
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            //Hacemos la inyección de la Interfaz que nos dejará usar en el constructor diferentes clases que implementen dicha interfaz
+            //Ejemplo es que aqui todas las Entidades heredan de la clase *ContenedorTrabajo*, que es la que implementa la interfaz que se inyecta
+            //Esto permitira mandar como parametro al contructor de Controller donde se inyecta, multiples clases, simpre y cuando implementen directa o indirectamente la  Interfaz especificada
+            services.AddScoped<IContenedorTrabajo,ContenedorTrabajo>();
+
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }

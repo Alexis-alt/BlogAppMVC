@@ -10,6 +10,12 @@ namespace Blog.AccesoDatos.Data
 {
     public class CategoriaRepository : Repository<Categoria>, ICategoriaRepository
     {
+        
+        //La Clase Repository es la clpase Padre de todos los Modelos o Repositorios
+        //La Clase es generica, donde especificamos que <T> TIENE QUE SER UNA CLASE
+        //De ella heredamos métodos CRUD excepto el de Update que de implementa de diferente forma en cada Modelo
+        
+
 
         private readonly ApplicationDbContext _db;
 

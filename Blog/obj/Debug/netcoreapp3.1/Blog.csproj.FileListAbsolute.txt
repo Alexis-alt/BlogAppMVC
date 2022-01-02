@@ -884,3 +884,4 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.csp
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.dll
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.pdb
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.genruntimeconfig.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Index.cshtml.g.cs
