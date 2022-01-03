@@ -32,6 +32,21 @@ namespace Blog.Areas.Admin
      
         }
 
+
+        //Solicitamos la vista donde se muestra el forma para crear un nuevo elemento
+        [HttpGet]
+        public IActionResult Create()
+        {
+
+            return View();
+
+        }
+
+
+
+
+
+
         #region Llamadas CRUD
 
 
