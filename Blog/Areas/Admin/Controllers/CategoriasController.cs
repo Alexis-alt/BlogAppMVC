@@ -1,4 +1,5 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
+using Blog.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -42,8 +43,29 @@ namespace Blog.Areas.Admin
 
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Categoria categoria)
+        {
+
+            //Si modelo obtenido desde el form cumple con todos los requisitos establecidos en los DataAnnotaciones
+            if (ModelState.IsValid)
+            {
+                //Isertción del registro
+                _contenedorTrabajo.Categoria.Add(categoria);
 
 
+                //Se guardan cambios en BD
+                _contenedorTrabajo.Save();
+
+                return RedirectToAction(nameof(Index));
+
+            }
+
+
+            return View(categoria);
+
+        }
 
 
 
@@ -53,13 +75,17 @@ namespace Blog.Areas.Admin
         public IActionResult GetAll()
         {
             //Convertimos a JSON un objeto anonimo
-            return Json(new
+
+
+            var values = Json(new
             {
 
-            data= _contenedorTrabajo.Categoria.GetAll()
+                data = _contenedorTrabajo.Categoria.GetAll()
 
             });
 
+
+            return values;
         }
 
 
