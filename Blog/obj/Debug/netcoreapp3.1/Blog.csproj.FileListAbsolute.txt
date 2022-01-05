@@ -887,3 +887,4 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.gen
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Index.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Edit.cshtml.g.cs

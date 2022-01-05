@@ -1,4 +1,5 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
+using Blog.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -43,7 +44,45 @@ namespace Blog.Areas.Admin
         }
 
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Categoria categoria)
+        {
 
+            if (ModelState.IsValid)
+            {
+
+                _contenedorTrabajo.Categoria.Add(categoria);
+                _contenedorTrabajo.Save();
+
+
+                return RedirectToAction(nameof(Index));
+
+            }
+
+
+            return View(categoria);
+
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            Categoria categoria = new Categoria();
+
+            categoria = _contenedorTrabajo.Categoria.Get(id);
+
+            if(categoria == null)
+            {
+                return NotFound();
+
+
+            }
+
+            return View(categoria);
+
+
+        }
 
 
 
