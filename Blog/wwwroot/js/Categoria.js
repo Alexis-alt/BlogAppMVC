@@ -8,7 +8,7 @@ $(document).ready(function () {
 function cargarDatatable() {
     dataTable = $("#tableCategoria").DataTable({
         "ajax": {
-            "url": "/Admin/categorias/GetAll",
+            "url": "/Admin/Categorias/GetAll",
             "type": "GET",
             "datatype": "json"
         },

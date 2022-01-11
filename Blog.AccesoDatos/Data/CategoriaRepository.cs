@@ -41,6 +41,8 @@ namespace Blog.AccesoDatos.Data
             );
         }
 
+
+        //El Update se coloca directamente en cada Entidad debido que se implementa diferente en cada una
         public void Update(Categoria categoria)
         {
             var registroActualizar = _db.Categoria.FirstOrDefault(s=>s.IdCategoria == categoria.IdCategoria);

@@ -86,9 +86,36 @@ namespace Blog.Areas.Admin
 
 
 
-        #region Llamadas CRUD
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Categoria categoria)
+        {
+
+            if (ModelState.IsValid)
+            {
+
+                _contenedorTrabajo.Categoria.Update(categoria);
+                _contenedorTrabajo.Save();
 
 
+                return RedirectToAction(nameof(Index));
+
+            }
+
+
+            return View(categoria);
+
+        }
+
+
+
+
+
+
+
+        #region Llamadas por AJAX a la API
+
+        [HttpGet]
         public IActionResult GetAll()
         {
             //Convertimos a JSON un objeto anonimo
@@ -100,6 +127,38 @@ namespace Blog.Areas.Admin
             });
 
         }
+
+
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _contenedorTrabajo.Categoria.Get(id);
+            if(objFromDb == null)
+            {
+
+                return Json(new {
+                success = false,
+                message = "Error al borrar la categoría"
+                
+                });
+            }
+
+
+            _contenedorTrabajo.Categoria.Remove(objFromDb);
+            _contenedorTrabajo.Save();
+
+            return Json(new
+            {
+                success = true, 
+                message = "La categoría fue borrada con exito"
+
+            });
+
+
+
+        }
+
 
 
 

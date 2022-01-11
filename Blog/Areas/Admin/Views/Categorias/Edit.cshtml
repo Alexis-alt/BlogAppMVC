@@ -1,8 +1,85 @@
-﻿
+﻿@model Blog.Models.Categoria
+
+
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Edit</h1>
 
+
+<br />
+<br />
+
+<h3 class="text-center">Editar Categoría</h3>
+
+<form method="post" asp-action="Edit">
+    <div class="row px-2 mx-2 border">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <input type="hidden" asp-for="IdCategoria"/>
+
+        <div class="col-10 offset-1 mt-4">
+            <div class="form-group row">
+                <div class="col-4">
+
+                    <label asp-for="Nombre"></label>
+
+                </div>
+                <div class="col-8">
+                    <input asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+            <div class="form-group row mt-2">
+                <div class="col-4">
+
+                    <label asp-for="Orden"></label>
+
+                </div>
+                <div class="col-8">
+                    <input asp-for="Orden" class="form-control" />
+                    <span asp-validation-for="Orden" class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+            <div class="form-group row mt-4">
+                <div class="col-8 offset-4">
+
+                    <div class="row">
+                        <div class="col">
+
+                            <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.IdCategoria">Actualizar</button>
+                            &nbsp;
+
+                        </div>
+                        <div class="col">
+
+                            <a asp-action="Index" class="btn btn-success form-control">Volver a Lista</a>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</form>

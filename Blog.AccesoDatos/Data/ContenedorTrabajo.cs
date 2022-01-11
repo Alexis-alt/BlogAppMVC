@@ -17,7 +17,7 @@ namespace Blog.AccesoDatos.Data
 
             //Aqui tenemos que colocar todas las Entidades 
             Categoria = new CategoriaRepository(_db);
-
+            Articulo = new ArticuloRepository(_db);
             
         }
 
@@ -26,6 +26,8 @@ namespace Blog.AccesoDatos.Data
         //Aquí colocamos las propiedades que referencian a las interfaces de cada una de las entidades
 
         public ICategoriaRepository Categoria { get; private set; }
+
+        public IArticuloRepository Articulo { get; private set; }
 
         public void Dispose()
         {
