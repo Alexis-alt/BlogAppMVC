@@ -14,7 +14,7 @@ namespace Blog.AccesoDatos.Data
         {
         }
 
-        //Tablas de la BD
+        //Tablas o Entidades de la BD
 
        public DbSet<Categoria> Categoria { get; set; }
 

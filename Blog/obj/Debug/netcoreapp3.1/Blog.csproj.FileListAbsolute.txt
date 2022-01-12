@@ -888,3 +888,5 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Ar
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Edit.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Index.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Create.cshtml.g.cs

@@ -1,4 +1,5 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
+using Blog.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -27,10 +28,30 @@ namespace Blog.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
+
+
         }
 
 
+        [HttpGet]
+
+        public  IActionResult Create()
+        {
+
+            ArticuloVM artivm = new ArticuloVM()
+            {
+
+                Articulo = new Models.Articulo(),
+
+                ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias(),
+
+
+            };
+
+            return View(artivm);
+        }
 
 
         
@@ -49,10 +70,6 @@ namespace Blog.Areas.Admin.Controllers
             });
 
         }
-
-
-
-
 
 
 

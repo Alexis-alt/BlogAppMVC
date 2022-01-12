@@ -10,6 +10,9 @@ namespace Blog.AccesoDatos.Data
 {
     public class Repository<T> : IRepository<T> where T : class
     {
+        //Esta es la Clase Padre de todas las entidades que hacen uso de los métodos genericos que contiene esta clase
+        //Implementa de la interfaz IReposiroy de tipo Generico
+        
 
         protected readonly DbContext Context;
 
@@ -44,22 +47,53 @@ namespace Blog.AccesoDatos.Data
         }
 
 
+
+
+        //Los siguienes dos métodos contienen como parametros delegados del tipo Func "Con los cuales indicamos que recibirá una función que recibe un parametro generico y regresa un valor bool"
+        //Se inicializan como null los parametros ya que en algunas ocasiones pueden necesitarse y en otras omitirse
+
         public T FirstOrDefaul(Expression<Func<T, bool>> filter = null, string includeProperties = null)
         {
 
+
+            
+            //Colección de datos //Tabla o Entidad
             IQueryable<T> query = dbSet;
 
+            //Cuando si se envia como parametro una función para filtrar.
             if (filter != null)
             {
+                                   //Aquí se aplica el filtro
                 query = query.Where(filter);
 
             }
 
+
+            //Cuando se incluyen propiedades
+
             if (includeProperties != null)
             {
-
+                //Se divide la candena que se recibe como parametro y la cual contiene las Propiedades que se quieren añadir a la consulta
+                //Las propiedades que se reciben se separan por comas y se elminan los espacios
+                //El array resultante es un ARRAY DE PROPIEDADES las cuales se van iterando y añadiendo a la query;
                 foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
+
+                    /*El método include() que se aplica a un DbSet permite poder incluir
+                     * en los resultados de la consulta, propiedades
+                     * que referencian a una propiedad de otra de otra tabla 
+                     * 
+                     * Se puede implementar de 2 formas 
+                     * 
+                     * DbSet.include(registroQueSeObtiene => registroQueSeObtiene.NombreDeLaPropiedaIncluir)
+                     *  
+                     * DbSet.include("NombreDeLaPropiedaIncluir")
+                     * 
+                     */
+
+
+
+
 
                     query = query.Include(includeProperty);
 
@@ -68,6 +102,7 @@ namespace Blog.AccesoDatos.Data
             }
 
 
+            //Se retorna unicamente el primer elemento de toda la colección de datos obtenida
             return query.FirstOrDefault();
 
 
