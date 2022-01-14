@@ -50,6 +50,7 @@ namespace Blog.AccesoDatos.Data
 
 
         //Los siguienes dos métodos contienen como parametros delegados del tipo Func "Con los cuales indicamos que recibirá una función que recibe un parametro generico y regresa un valor bool"
+        //Dichos delegados se implementan dentro del método
         //Se inicializan como null los parametros ya que en algunas ocasiones pueden necesitarse y en otras omitirse
 
         public T FirstOrDefaul(Expression<Func<T, bool>> filter = null, string includeProperties = null)
@@ -60,10 +61,10 @@ namespace Blog.AccesoDatos.Data
             //Colección de datos //Tabla o Entidad
             IQueryable<T> query = dbSet;
 
-            //Cuando si se envia como parametro una función para filtrar.
+            //Cuando si se envia como parametro una función/delegado para filtrar.
             if (filter != null)
             {
-                                   //Aquí se aplica el filtro
+                                   //Aquí se aplica el filtro IMPLEMENTANDOSE EL DELEGADO
                 query = query.Where(filter);
 
             }
@@ -79,9 +80,11 @@ namespace Blog.AccesoDatos.Data
                 foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
                 {
 
-                    /*El método include() que se aplica a un DbSet permite poder incluir
-                     * en los resultados de la consulta, propiedades
+                    /*El método include() que se aplica a un DbSet, permite poder incluir
+                     * en los resultados de la consulta propiedades
                      * que referencian a una propiedad de otra de otra tabla 
+                     * 
+                     * Es decir llaves foraneás
                      * 
                      * Se puede implementar de 2 formas 
                      * 
@@ -144,6 +147,8 @@ namespace Blog.AccesoDatos.Data
             }
 
 
+            //Se retorna una lista la cual sabemos que hereda de IEnumerable
+            //En este caso es hasta aqui donde se manda la consulta al motor de BD, debido a que estamos usando IQueriable el cual primero adjunta todas las conusltas y se ejecuta hasta que se Iteré la colección obtenida o se haga un ToList() 
             return query.ToList();
 
 

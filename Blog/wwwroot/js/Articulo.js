@@ -1,17 +1,27 @@
 ﻿var dataTable;
 
 $(document).ready(function () {
+
+
+    //Al cargar la pagina el método cargarDataTable se ejecuta automaticamente 
+    //Dicho método hace una llamada AJAX al método GetAll del Controller, obteniendo como resultado un JSON con el cual se completa el DataTable 
+
     cargarDatatable();
+
 });
 
 
 function cargarDatatable() {
     dataTable = $("#tableArticulo").DataTable({
+
+        //Se configura llamada AJAX 
         "ajax": {
             "url": "/Admin/Articulos/GetAll",
             "type": "GET",
             "datatype": "json"
         },
+        //Configuración de columnas
+
         "columns": [
             { "data": "IdAriculo", "width": "5%" },
             { "data": "nombre", "width": "25%" },
@@ -33,6 +43,7 @@ function cargarDatatable() {
                 }, "width": "30%"
             }
         ],
+
         "language": {
             "emptyTable": "No hay registros"
         },

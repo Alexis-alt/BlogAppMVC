@@ -25,7 +25,7 @@ namespace Blog.Areas.Admin.Controllers
 
         }
 
-
+    //Carga la vista con el DataTable
         public IActionResult Index()
         {
             
@@ -35,6 +35,9 @@ namespace Blog.Areas.Admin.Controllers
         }
 
 
+
+        //Carga la vista para crear un Nuevo Articulo 
+        //Completa el dropDown con las categorias y sus items
         [HttpGet]
 
         public  IActionResult Create()
@@ -42,13 +45,17 @@ namespace Blog.Areas.Admin.Controllers
 
             ArticuloVM artivm = new ArticuloVM()
             {
-
+                
                 Articulo = new Models.Articulo(),
-
+                
+                //Se llena con un SelectListItem el cual contiene Nombres y Id de las categorias
                 ListaCategorias = _contenedorTrabajo.Categoria.GetListaCategorias(),
 
 
             };
+
+
+            //Se puede mandar data a la vista mediante ViweBag o por parametros 
 
             return View(artivm);
         }
@@ -58,12 +65,15 @@ namespace Blog.Areas.Admin.Controllers
 
         #region Llamadas por AJAX a la API
 
-        [HttpGet]
+
+        //Este método se encarga de proveer los datos al DataTable
+        [HttpGet]  
         public IActionResult GetAll()
         {
             //Convertimos a JSON un objeto anonimo
             return Json(new
             {
+
 
             data= _contenedorTrabajo.Articulo.GetAll(includeProperties:"Categoria")
 

@@ -11,8 +11,11 @@ namespace Blog.Models
         [Key]
         public int IdAriculo { get; set; }
 
+
+        
         [Required(ErrorMessage ="El nombre es necesario")]
-        [Display(Name ="Nombre del articulo")]
+        [Display(Name ="Nombre del articulo")]        //Se encarga de nombrar el campo en la vista
+
         public string Nombre { get; set; }
 
 

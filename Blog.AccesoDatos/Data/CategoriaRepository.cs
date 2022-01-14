@@ -29,12 +29,19 @@ namespace Blog.AccesoDatos.Data
 
         }
 
+        //El SelectListItem se usa para mostrar data en los DropDown
+        //Este metodo retorna una lista de Categorias, las cuales se muestran en un DropDown
 
         public IEnumerable<SelectListItem> GetListaCategorias()
         {
+            
+
+                                                //Por cada registro de la Tabla se genera un Elemento de TipoSelectListItem
             return _db.Categoria.Select(i => new SelectListItem()
             {
+                //Valor visible
                 Text=i.Nombre,
+                //Id del nombre
                 Value = i.IdCategoria.ToString()
             }
             
