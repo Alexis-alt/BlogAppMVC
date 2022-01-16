@@ -1,8 +1,10 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
 using Blog.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,6 +18,10 @@ namespace Blog.Areas.Admin.Controllers
     {
 
         private readonly IContenedorTrabajo _contenedorTrabajo;
+
+        private readonly IWebHostEnvironment _hostingEnviroment;
+
+        
 
         public ArticulosController(IContenedorTrabajo contenedorTrabajo)
         {
@@ -60,7 +66,33 @@ namespace Blog.Areas.Admin.Controllers
             return View(artivm);
         }
 
+        public IActionResult Create(ArticuloVM artiVM)
+        {
+            if (ModelState.IsValid)
+            {
 
+                string rutaPrincipal = _hostingEnviroment.WebRootPath;
+                var archivos = HttpContext.Request.Form.Files;
+
+
+                if (artiVM.Articulo.IdAriculo == 0)
+                {
+
+                    string nombreArchivo = Guid.NewGuid().ToString();
+                    var subidas = Path.Combine(rutaPrincipal, @"imagenes\articulos");
+                    var extension = Path.GetExtension(archivos[0].FileName);
+
+
+                }
+
+
+
+
+            }
+            
+
+
+        }
         
 
         #region Llamadas por AJAX a la API

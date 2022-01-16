@@ -23,12 +23,12 @@ function cargarDatatable() {
         //Configuración de columnas
 
         "columns": [
-            { "data": "IdAriculo", "width": "5%" },
+            { "data": "IdArticulo", "width": "5%" },
             { "data": "nombre", "width": "25%" },
             { "data": "categoria.nombre", "width": "15%" },
             { "data": "fechaCreacion", "width": "15%" },
             {
-                "data": "IdAriculo",
+                "data": "IdArticulo",
                 "render": function (data) {
 
                     return `<div class="text-center">
