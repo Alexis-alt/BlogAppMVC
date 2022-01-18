@@ -9,7 +9,7 @@ namespace Blog.Models
    public class Articulo
     {
         [Key]
-        public int IdAriculo { get; set; }
+        public int IdArticulo { get; set; }
 
 
         

@@ -146,10 +146,10 @@ namespace Blog.AccesoDatos.Data
 
             }
 
-
+            var lst = query.ToList();
             //Se retorna una lista la cual sabemos que hereda de IEnumerable
             //En este caso es hasta aqui donde se manda la consulta al motor de BD, debido a que estamos usando IQueriable el cual primero adjunta todas las conusltas y se ejecuta hasta que se Iteré la colección obtenida o se haga un ToList() 
-            return query.ToList();
+            return lst;
 
 
         }

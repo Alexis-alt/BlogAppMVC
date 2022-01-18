@@ -890,3 +890,4 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Edit.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Index.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Create.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Edit.cshtml.g.cs

@@ -1,16 +1,17 @@
 ﻿@model Blog.Models.ViewModels.ArticuloVM
 
 
+
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!--Una vez indicamos el model cada uno de los campos se adecua para introducir el valor en la vista, Esto en base al tipo de la propiedad (Se especifica en el modelo) que se esta introduciendo -->
+
 <br />
 <br />
 
-<h3 class="text-center">Crear Nuevo Articulo</h3>
+<h3 class="text-center">Editar Articulo</h3>
 
 <form method="post" asp-action="Create" enctype="multipart/form-data">
 
@@ -41,7 +42,7 @@
 
             <div class="form-group row mt-2">
                 <div class="col-4">
-                    
+
                     <label asp-for="Articulo.CategoriaId"></label>
 
                 </div>
@@ -55,7 +56,7 @@
 
             </div>
 
-            
+
 
             <div class="form-group row mt-2">
                 <div class="col-4">
@@ -90,10 +91,33 @@
             <div class="form-group row mt-4">
                 <div class="col-8 offset-4">
 
-                    <partial name="_VistaCrearVolver" />
+                    <div class="row">
+                        <div class="col">
+
+                            <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model.Articulo.IdArticulo">Actualizar</button>
+                            &nbsp;
+
+                        </div>
+                        <div class="col">
+
+                            <a asp-action="Index" class="btn btn-success form-control">Volver a Lista</a>
+
+                        </div>
+
+
+
+
+                    </div>
+
 
                 </div>
 
+
+            </div>
+
+            <div class="col-4 pt-3">
+
+                <img src="~/@Model.Articulo.UrlImagen" width="100%" style="border-radius:5px; border:1px solid #bbb9b9"/>
 
             </div>
 
@@ -109,7 +133,7 @@
 
 @section Scripts{
 
-   
+
 
     <script src="https://cdn.tiny.cloud/1/uqq8rwm6zwzcu0fogb1j3dbdv1y9cmmjar68a2qsa1rjshox/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
@@ -126,3 +150,5 @@
 
 
 }
+
+

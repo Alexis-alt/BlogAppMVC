@@ -24,7 +24,7 @@ namespace Blog.AccesoDatos.Data
 
         public void Update(Articulo articulo)
         {
-            var registroActualizar = _db.Articulo.FirstOrDefault(s => s.IdAriculo == articulo.IdAriculo);
+            var registroActualizar = _db.Articulo.FirstOrDefault(s => s.IdArticulo == articulo.IdArticulo);
             registroActualizar.Nombre = articulo.Nombre;
             registroActualizar.Descripcion = articulo.Descripcion;
             registroActualizar.UrlImagen = articulo.UrlImagen;
