@@ -28,6 +28,7 @@ namespace Blog.AccesoDatos.Data
         public ICategoriaRepository Categoria { get; private set; }
 
         public IArticuloRepository Articulo { get; private set; }
+         
 
         public void Dispose()
         {

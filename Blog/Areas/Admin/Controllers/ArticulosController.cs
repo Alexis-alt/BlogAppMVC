@@ -17,6 +17,7 @@ namespace Blog.Areas.Admin.Controllers
 
     public class ArticulosController : Controller
     {
+        //Solo implementa métodos y propiedades que contiene la Interfaz IContenedorTrabajo
 
         private readonly IContenedorTrabajo _contenedorTrabajo;
 
@@ -32,6 +33,8 @@ namespace Blog.Areas.Admin.Controllers
             _contenedorTrabajo = contenedorTrabajo;
 
             _hostEnvironment = hostEnvironment;
+
+            
         }
 
     //Carga la vista con el DataTable
@@ -177,13 +180,15 @@ namespace Blog.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //Convertimos a JSON un objeto anonimo
-            return Json(new
+            var response = Json(new
             {
 
 
             data= _contenedorTrabajo.Articulo.GetAll(includeProperties:"Categoria")
 
             });
+
+            return response;
 
         }
 
