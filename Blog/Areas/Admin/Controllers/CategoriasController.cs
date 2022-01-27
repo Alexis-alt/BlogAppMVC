@@ -65,6 +65,7 @@ namespace Blog.Areas.Admin
 
         }
 
+
         [HttpGet]
         public IActionResult Edit(int id)
         {

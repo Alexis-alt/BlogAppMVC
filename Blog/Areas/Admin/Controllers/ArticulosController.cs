@@ -169,6 +169,140 @@ namespace Blog.Areas.Admin.Controllers
         }
      
 
+        [HttpPost]
+
+        public IActionResult Edit(ArticuloVM artiVM)
+        {
+
+            var articuloEditar = _contenedorTrabajo.Articulo.Get(artiVM.Articulo.IdArticulo);
+
+
+
+            if (ModelState.IsValid)
+            {
+                //Property que Mapea la ruta del servidor donde se encuentra el repositorio contenedor de archivos (wwwroot)
+                //Podemos obtenerla o establecerla
+                string rutaPrincipal = _hostEnvironment.WebRootPath;
+
+                //Referencia los archivos que se cargan en el form
+                //Al parecer es un array que contiene todos los archivos cargados
+                var archivos = HttpContext.Request.Form.Files;
+
+
+                if (archivos.Count() > 0)
+                {
+                    //Asignamos nombre al del archivo un Guid que nos da como resultado una cadena unica
+                    string nombreArchivo = Guid.NewGuid().ToString();
+
+                    //Indicamos el repositorio donde se almacenarán los archivos o en este caso las imagenes
+                    //Concatenamos o añadimos la rutaPrincipal es decir la ruta del servidor
+                    var subidas = Path.Combine(rutaPrincipal, @"imagenes\articulos");
+
+                    //Extraemos el nombre del archivo cargado y su extensión
+                    //Accedemos al array que almacena los archivos cargados en el form, en este caso a la primera pocisión debido a que solo cargamos un archivo
+                    var extension = Path.GetExtension(archivos[0].FileName);
+
+                    var nuevaExtension = Path.GetExtension(archivos[0].FileName);
+
+
+                    var rutaImagen = Path.Combine(rutaPrincipal, articuloEditar.UrlImagen.TrimStart('\\'));
+
+                    if (System.IO.File.Exists(rutaImagen))
+                    {
+
+                        System.IO.File.Delete(rutaImagen);
+
+                    }
+
+
+                    //Creamos un contexto para crear nuestro archivo 
+                    //Instanciamos un objeto de tipo FileStream el cual recibe 4 parametros en el Constructor, 2 obligatorios que son los que enviamos
+
+                    //Ruta del archivo -String                   //Que se va a hacer -Enum
+                    using (var fileStream = new FileStream(Path.Combine(subidas, nombreArchivo + nuevaExtension), FileMode.Create))
+                    {
+
+
+                        archivos[0].CopyTo(fileStream);
+
+
+
+                    }
+
+                    //Añadimos los valores de los atributos restantes del modelo
+                    artiVM.Articulo.UrlImagen = @"imagenes\articulos\" + nombreArchivo + extension;
+
+                    artiVM.Articulo.FechaCreacion = DateTime.Now.ToString();
+
+
+                    _contenedorTrabajo.Articulo.Update(artiVM.Articulo);
+                    _contenedorTrabajo.Save();
+
+                    return RedirectToAction(nameof(Index));
+                }
+
+                else
+                {
+                    //Cuando la imagen no se tiene que editar y se tiene que conservar la misma de la BD
+
+                    artiVM.Articulo.UrlImagen = articuloEditar.UrlImagen;
+
+
+                    _contenedorTrabajo.Articulo.Update(artiVM.Articulo);
+                    _contenedorTrabajo.Save();
+
+                    return RedirectToAction(nameof(Index));
+
+                }
+
+
+
+
+
+            }
+
+
+
+            return View();
+
+
+
+        }
+
+
+        [HttpDelete]
+
+        public IActionResult Delete(int id)
+        {
+
+            var articuloEliminar = _contenedorTrabajo.Articulo.Get(id);
+
+            var rutaDirectorioPrincipal = _hostEnvironment.WebRootPath;
+            var rutaImagen = Path.Combine(rutaDirectorioPrincipal,articuloEliminar.UrlImagen.TrimStart('\\'));
+
+
+            if (System.IO.File.Exists(rutaImagen))
+            {
+
+                System.IO.File.Delete(rutaImagen);
+
+            }
+
+            if (articuloEliminar == null)
+            {
+
+
+                return Json(new {success=false, message = "Something was Wrong :(" });
+            }
+
+
+            _contenedorTrabajo.Articulo.Remove(articuloEliminar);
+            _contenedorTrabajo.Save();
+            return Json(new { success = true, message = "Se borro correctamente" });
+
+
+
+        }
 
 
 

@@ -15,10 +15,12 @@
 
 <form method="post" asp-action="Create" enctype="multipart/form-data">
 
+<input type="hidden" asp-for="Articulo.IdArticulo"/>
+
     <div class="row px-2 mx-2 border">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <div class="col-10 offset-1 mt-4">
+        <div class="col-8 mt-4">
 
 
 
@@ -115,15 +117,18 @@
 
             </div>
 
-            <div class="col-4 pt-3">
-
-                <img src="~/@Model.Articulo.UrlImagen" width="100%" style="border-radius:5px; border:1px solid #bbb9b9"/>
-
-            </div>
 
 
 
         </div>
+
+        <div class="col-4 pt-3">
+
+            <img src="~/@Model.Articulo.UrlImagen" width="100%" style="border-radius:5px; border:1px solid #bbb9b9" />
+
+        </div>
+
+
 
 
     </div>
