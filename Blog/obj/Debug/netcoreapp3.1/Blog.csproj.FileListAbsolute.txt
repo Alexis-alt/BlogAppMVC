@@ -864,6 +864,14 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\scopedcs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.TagHelpers.input.cache
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.TagHelpers.output.cache
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.RazorCoreGenerate.cache
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Create.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Edit.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Index.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Edit.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Index.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Create.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Index.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Cliente\Views\Home\Index.cshtml.g.cs
@@ -875,6 +883,7 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.RazorTargetAssemblyInfo.cache
@@ -884,10 +893,4 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.csp
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.dll
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.pdb
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Blog.genruntimeconfig.cache
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Index.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Create.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_VistaCrearVolver.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Categorias\Edit.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Index.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Create.cshtml.g.cs
-C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Articulos\Edit.cshtml.g.cs
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Sliders\Edit.cshtml.g.cs

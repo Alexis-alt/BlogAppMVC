@@ -18,7 +18,8 @@ namespace Blog.AccesoDatos.Data
             //Aqui tenemos que colocar todas las Entidades 
             Categoria = new CategoriaRepository(_db);
             Articulo = new ArticuloRepository(_db);
-            
+            Slider = new SliderRespository(_db);
+
         }
 
         
@@ -28,7 +29,9 @@ namespace Blog.AccesoDatos.Data
         public ICategoriaRepository Categoria { get; private set; }
 
         public IArticuloRepository Articulo { get; private set; }
-         
+
+        public ISliderRepository Slider { get; private set; }
+
 
         public void Dispose()
         {

@@ -1,0 +1,94 @@
+﻿@model Blog.Models.Slider
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Una vez indicamos el model cada uno de los campos se adecua para introducir el valor en la vista, Esto en base al tipo de la propiedad (Se especifica en el modelo) que se esta introduciendo -->
+<br />
+<br />
+
+<h3 class="text-center">Crear Nuevo Slider</h3>
+
+<form method="post" asp-action="Create" enctype="multipart/form-data">
+
+    <div class="row px-2 mx-2 border">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-10 offset-1 mt-4">
+
+
+
+            <div class="form-group row">
+                <div class="col-4">
+
+                    <!--Nombre del campo-->
+                    <label asp-for="Nombre"></label>
+
+                </div>
+                <div class="col-8">
+                    <!--Input o caja para el texto-->
+                    <input asp-for="Nombre" class="form-control" />
+
+                    <!--Validacion de que el campo llenado cumpla con lo requerido-->
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+            <div class="form-group form-check row">
+
+
+
+                <div class="col-8">
+
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="Estado" /> @Html.DisplayNameFor(model => model.Estado)
+                    </label>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="form-group row mt-2">
+                <div class="col-4">
+
+                    <label asp-for="UrlImagen"></label>
+
+                </div>
+                <div class="col-8">
+                    <input asp-for="UrlImagen" type="file" accept="image/*" name="archivos" id="subidaArchivos" class="form-control" />@Html.DisplayFor(model=> model.UrlImagen)
+
+                </div>
+
+            </div>
+
+
+
+            <!--Vista parcial-->
+
+            <div class="form-group row mt-4">
+                <div class="col-8 offset-4">
+
+                    <partial name="_VistaCrearVolver" />
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</form>

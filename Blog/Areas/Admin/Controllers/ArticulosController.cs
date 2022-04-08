@@ -317,7 +317,7 @@ namespace Blog.Areas.Admin.Controllers
             var response = Json(new
             {
 
-
+                //Accede primero a la unidad contenedor de trabajo donse se encuentran las propiedades que referencian al rspositorio de cada model
             data= _contenedorTrabajo.Articulo.GetAll(includeProperties:"Categoria")
 
             });
