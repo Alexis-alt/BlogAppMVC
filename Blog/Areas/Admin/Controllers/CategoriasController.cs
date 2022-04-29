@@ -24,6 +24,7 @@ namespace Blog.Areas.Admin
 
             _contenedorTrabajo = contenedorTrabajo;
 
+
         }
 
 

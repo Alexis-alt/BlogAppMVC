@@ -1,4 +1,6 @@
-﻿using Blog.Models;
+﻿using Blog.AccesoDatos.Data.Repository;
+using Blog.Models;
+using Blog.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -14,22 +16,41 @@ namespace Blog.Controllers
 
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IContenedorTrabajo _contenedorTrabajo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IContenedorTrabajo contenedorTrabajo)
         {
-            _logger = logger;
+            _contenedorTrabajo = contenedorTrabajo;
         }
 
         public IActionResult Index()
         {
-            return View();
+            HomeVM homeVM = new HomeVM()
+            {
+                Sliders = _contenedorTrabajo.Slider.GetAll(),
+                Articulos = _contenedorTrabajo.Articulo.GetAll()
+
+
+            };
+
+
+
+            return View(homeVM);
         }
 
-        public IActionResult Privacy()
+
+        public IActionResult Details(int id)
         {
-            return View();
+            var articulo = _contenedorTrabajo.Articulo.Get(id);
+
+            //Retorna a la vista establecida enviandole el objeto articulo 
+            return View(articulo);
+
+
         }
+
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -15,3 +15,4 @@ C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.dll
 C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.pdb
+C:\Users\alexi\Documents\GitHub\BlogAppMVC\Blog.Utilidades\obj\Debug\netcoreapp3.1\Blog.Utilidades.csproj.AssemblyReference.cache
