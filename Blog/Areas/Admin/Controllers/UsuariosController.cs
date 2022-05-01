@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Principal;
 using System.Threading.Tasks;
 
 namespace Blog.Areas.Admin.Controllers
@@ -13,6 +14,10 @@ namespace Blog.Areas.Admin.Controllers
     [Area("Admin")]
     public class UsuariosController : Controller
     {
+
+
+
+    
 
 
         private readonly IContenedorTrabajo _contenedorTrabajo;
@@ -25,11 +30,16 @@ namespace Blog.Areas.Admin.Controllers
         }
 
 
-
+     
         public IActionResult Index()
         {
 
+
+            //Aqui se esta haciedo un cast de tipo IIdentity a ClaimsIdentity se puede castear debido a que implementa de esa interfaz
+          
+                                                
             var claimsIdentity = (ClaimsIdentity)this.User.Identity;
+
 
             var usuarioActual = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
 
@@ -38,11 +48,40 @@ namespace Blog.Areas.Admin.Controllers
 
 
 
+        
+        public IActionResult Bloquear(string id)
+        {
+            if(id == null)
+            {
+
+                return NotFound();
+
+            }
+
+            _contenedorTrabajo.Usuario.BloquearUsuario(id);
+            return RedirectToAction(nameof(Index));
 
 
 
+        }
 
 
+
+        public IActionResult Desbloquear(string id)
+        {
+            if (id == null)
+            {
+
+                return NotFound();
+
+            }
+
+            _contenedorTrabajo.Usuario.DesbloquearUsuario(id);
+            return RedirectToAction(nameof(Index));
+
+
+
+        }
 
 
 

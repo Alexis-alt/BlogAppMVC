@@ -38,7 +38,7 @@ namespace Blog
 
 
 
-            //Maneja los servicios de autenticación
+            //Maneja los servicios de autorización
             services.AddIdentity<IdentityUser,IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 //Tokens para cambiar email, resetear el password o cambiar número de teléfono
@@ -76,7 +76,10 @@ namespace Blog
 
             app.UseRouting();
 
+            //Proveer el TOKEN en base a las credenciales
             app.UseAuthentication();
+
+            //Definir permisos
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
