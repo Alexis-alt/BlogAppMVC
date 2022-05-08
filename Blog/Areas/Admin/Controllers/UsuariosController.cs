@@ -1,4 +1,5 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Areas.Admin.Controllers
 {
-
+    [Authorize]
     [Area("Admin")]
     public class UsuariosController : Controller
     {
@@ -37,7 +38,7 @@ namespace Blog.Areas.Admin.Controllers
 
             //Aqui se esta haciedo un cast de tipo IIdentity a ClaimsIdentity se puede castear debido a que implementa de esa interfaz
           
-                                                
+                                                //Recordemos que los claims se dan a partir del login
             var claimsIdentity = (ClaimsIdentity)this.User.Identity;
 
 

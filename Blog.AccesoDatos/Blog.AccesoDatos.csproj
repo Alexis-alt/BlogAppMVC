@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Inicializador\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Blog.Models\Blog.Models.csproj" />
     <ProjectReference Include="..\Blog.Utilidades\Blog.Utilidades.csproj" />
   </ItemGroup>

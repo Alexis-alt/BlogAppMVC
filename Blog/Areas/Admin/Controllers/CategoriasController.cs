@@ -1,5 +1,6 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
 using Blog.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,8 +10,10 @@ using System.Threading.Tasks;
 namespace Blog.Areas.Admin
 {
     //Hay que especificar el area a la cual pertenece, para que a la hora de llamarlo no exista ningun conflicto con la ruta
-   //Las peticiones de info se estarán trabajando con AJAX desde JS
-   //En la vista
+    //Las peticiones de info se estarán trabajando con AJAX desde JS
+    //En la vista
+
+    [Authorize]
     [Area("Admin")]
 
     public class CategoriasController : Controller

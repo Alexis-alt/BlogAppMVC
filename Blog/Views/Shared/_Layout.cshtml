@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Blog.Utilidades;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -25,26 +27,35 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav me-auto">
 
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropDown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                Contenidos
 
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropDown">
+                        @if (User.IsInRole(Constants.Admin))
+                        {
 
-                                <a class="dropdown-item" asp-area="Admin" asp-controller="Categorias" asp-action="Index">Categorias</a>
-                                <a class="dropdown-item" asp-area="Admin" asp-controller="Articulos" asp-action="Index">Artículos</a>
-                                <a class="dropdown-item" asp-area="Admin" asp-controller="Sliders" asp-action="Index">Sliders</a>
-                                <a class="dropdown-item" asp-area="Admin" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle text-white" id="navbarDropDown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    Contenidos
 
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropDown">
 
-
-                            </div>
-
-
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Categorias" asp-action="Index">Categorias</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Articulos" asp-action="Index">Artículos</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Sliders" asp-action="Index">Sliders</a>
+                                    <a class="dropdown-item" asp-area="Admin" asp-controller="Usuarios" asp-action="Index">Usuarios</a>
 
 
-                        </li>
+
+                                </div>
+
+
+
+
+                            </li>
+
+
+
+                        }
+
 
 
 

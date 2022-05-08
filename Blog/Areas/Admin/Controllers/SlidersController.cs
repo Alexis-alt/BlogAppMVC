@@ -1,5 +1,6 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
 using Blog.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Areas.Admin.Controllers
 {
+    [Authorize]
     [Area("Admin")]
     public class SlidersController : Controller
     {

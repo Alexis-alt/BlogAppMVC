@@ -24,10 +24,10 @@ namespace Blog.Areas.Identity.Pages.Account
       
 
 
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
-        private readonly IEmailSender _emailSender;
+
 
 
         //NO OLVIDAR CAMBIAR LA CONFIGURACIÓN DONDE SE INYECTA EL SERVICIO DE IDENTITY
@@ -39,21 +39,21 @@ namespace Blog.Areas.Identity.Pages.Account
         //Constructor
 
         public RegisterModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender,
+         
             RoleManager<IdentityRole> roleManager
             )
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
-            _emailSender = emailSender;
+          
             _roleManager = roleManager;
         }
 
-
+ 
 
         //Properties
         [BindProperty]

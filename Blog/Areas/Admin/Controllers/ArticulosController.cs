@@ -1,5 +1,6 @@
 ﻿using Blog.AccesoDatos.Data.Repository;
 using Blog.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,7 +13,7 @@ namespace Blog.Areas.Admin.Controllers
 {
     //Se usa ArticuloVM como Modelo debido a que se adapto para contener un modelo de Tipo Articulo y una Lista de Categorias adecuadas para el DropDowm
 
-
+    [Authorize]
     [Area("Admin")]
 
     public class ArticulosController : Controller
